@@ -1,4 +1,4 @@
-import '../globals.css';
+import './globals.css';
 import type { Metadata } from 'next';
 import { OnchainProviders } from '../components/OnchainProviders';
 
@@ -21,4 +21,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-} 
+}

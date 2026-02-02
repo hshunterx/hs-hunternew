@@ -34,22 +34,28 @@ export default function TransactionWrapper({ address }: { address: Address }) {
     console.log('Transaction successful', response);
   };
 
+  // Kita buat alias 'any' untuk komponen yang cerewet
+  const TButton = TransactionButton as any;
+  const TStatus = TransactionStatus as any;
+  const TStatusLabel = TransactionStatusLabel as any;
+  const TStatusAction = TransactionStatusAction as any;
+  const TBase = Transaction as any;
+
   return (
     <div className="flex w-[450px]">
-      {/* @ts-ignore */}
-      <Transaction
+      <TBase
         calls={contracts}
         className="w-[450px]"
         chainId={BASE_SEPOLIA_CHAIN_ID}
         onError={handleError}
         onSuccess={handleSuccess}
       >
-        <TransactionButton className="mt-0 mr-auto ml-auto w-[450px] max-w-full text-[white]" />
-        <TransactionStatus>
-          <TransactionStatusLabel />
-          <TransactionStatusAction />
-        </TransactionStatus>
-      </Transaction>
+        <TButton className="mt-0 mr-auto ml-auto w-[450px] max-w-full text-[white]" />
+        <TStatus>
+          <TStatusLabel />
+          <TStatusAction />
+        </TStatus>
+      </TBase>
     </div>
   );
 }

@@ -9,25 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@coinbase/onchainkit": "^1.1.2",
-    "@rainbow-me/rainbowkit": "^2.1.2",
-    "@tanstack/react-query": "^5.51.11",
-    "framer-motion": "^11.3.2",
-    "lucide-react": "^0.447.0",
+    "@coinbase/onchainkit": "1.1.2",
+    "@rainbow-me/rainbowkit": "2.1.2",
+    "@tanstack/react-query": "5.51.11",
+    "framer-motion": "11.3.2",
+    "lucide-react": "0.447.0",
     "next": "14.2.5",
-    "permissionless": "^0.1.43",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "viem": "^2.21.0",
-    "wagmi": "^2.12.0"
+    "permissionless": "0.1.43",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "viem": "2.21.0",
+    "wagmi": "2.12.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.14",
-    "@types/react": "^18.3.10",
-    "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.40",
-    "tailwindcss": "^3.4.7",
-    "typescript": "^5.6.2"
+    "@types/node": "20.14.14",
+    "@types/react": "18.3.10",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.40",
+    "tailwindcss": "3.4.7",
+    "typescript": "5.6.2"
   }
 }

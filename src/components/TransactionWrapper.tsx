@@ -34,12 +34,12 @@ export default function TransactionWrapper({ address }: { address: Address }) {
     console.log('Transaction successful', response);
   };
 
-  // Kita buat alias 'any' untuk komponen yang cerewet
+  // Teknik bypass untuk komponen yang menyebabkan error linting
+  const TBase = Transaction as any;
   const TButton = TransactionButton as any;
   const TStatus = TransactionStatus as any;
   const TStatusLabel = TransactionStatusLabel as any;
   const TStatusAction = TransactionStatusAction as any;
-  const TBase = Transaction as any;
 
   return (
     <div className="flex w-[450px]">

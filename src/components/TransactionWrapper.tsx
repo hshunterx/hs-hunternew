@@ -30,7 +30,6 @@ export default function TransactionWrapper({ address }: { address: Address }) {
     console.error('Transaction error:', err);
   };
 
-  // Menggunakan 'any' untuk menghindari error nama tipe data yang sering berubah di library
   const handleSuccess = (response: any) => {
     console.log('Transaction successful', response);
   };
@@ -39,7 +38,7 @@ export default function TransactionWrapper({ address }: { address: Address }) {
     <div className="flex w-[450px]">
       {/* @ts-ignore */}
       <Transaction
-        contracts={contracts}
+        calls={contracts}
         className="w-[450px]"
         chainId={BASE_SEPOLIA_CHAIN_ID}
         onError={handleError}
